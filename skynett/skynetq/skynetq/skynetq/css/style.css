@@ -1,0 +1,26 @@
+  .tomato-bg{
+    background-color: rgb(64, 141, 177);
+  }
+
+
+  .tomato-bg li a:hover{
+    background-color: rgba(233, 237, 241, 0.74);
+  }
+  /* color de fondo */
+  body{
+    background-color: #2381BD
+  }
+  .carousel-item{
+        align-items: center;
+  }
+  header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+
+
+  }
+  header nav ul{
+    list-style: none;
+  }
+    
+
