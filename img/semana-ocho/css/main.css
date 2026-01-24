@@ -1,0 +1,90 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 20%;
+}
+
+header nav ul{
+    display: flex;
+    color: whitesmoke;
+    list-style: none;
+    margin-right: 30px;
+    gap: 25px;
+}
+
+/* estilos de main  */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .textos{
+    text-align: center;
+}
+
+main .textos h1 span{
+    display: block;
+}
+
+main .textos .boton{
+    color: #2B2B2B;
+    background-color: #E6E6DD;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+main .imagen{
+    display: flex;
+    justify-content: center;
+}
+
+main .imagen img{
+    width: 75%;
+}
+
+section{    
+    background-color:#2B2B2B ;
+    display: flex;
+}
+
+section div{
+    padding: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section div img{
+    width: 20%;
+}
+
+
+footer{
+    text-align: center;
+}
