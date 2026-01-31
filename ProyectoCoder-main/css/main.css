@@ -1,0 +1,112 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+}
+
+/* BOTÓN */
+button {
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.button.learn-more .circle {
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+  margin: 0;
+  display: block;
+  position: relative;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.button.learn-more .circle .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+  transform: translate(-50%, -50%);
+}
+
+.button.learn-more .circle .icon::before {
+  position: absolute;
+  content: "";
+  top: -0.3125rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.button.learn-more .button-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+/* HOVER */
+.button.learn-more:hover .circle {
+  width: 100%;
+}
+
+.button.learn-more:hover .circle .icon {
+  background: #fff;
+  transform: translate(0, -50%);
+}
+
+.button.learn-more:hover .button-text {
+  color: #fff;
+}

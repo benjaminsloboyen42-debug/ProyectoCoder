@@ -1,0 +1,25 @@
+@import "utilities/mixin";
+
+button {
+  @include button-base;
+}
+
+.button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+.button.learn-more .circle {
+  @include button-circle;
+  @include smooth-transition;
+}
+
+.button.learn-more .button-text {
+  @include button-text;
+  @include smooth-transition;
+}
+
+header nav ul li a,
+nav ul li a {
+  @include link-reset;
+}
